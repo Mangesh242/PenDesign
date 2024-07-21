@@ -8,8 +8,8 @@ public class FountainPen extends Pen {
     Ink ink;
     public FountainPen(String name, String brand, float price, PenType penType, ClosingType closeType) {
         super(name,brand,price,penType,closeType);
-        nib=new Nib(4);
-        ink=new Ink("Blue");
+        nib=new Nib();
+        ink=new Ink();
     }
     @Override
     public void write() {

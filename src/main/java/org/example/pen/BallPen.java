@@ -11,8 +11,8 @@ public class BallPen extends Pen implements Refillable {
 
     public BallPen(String name, String brand, float price, PenType penType, ClosingType closingType){
         super(name,brand,price,penType,closingType);
-        nib=new Nib(4);
-        ink=new Ink("Red");
+        nib=new Nib();
+        ink=new Ink();
         refill=new Refill(nib,ink);
     }
     @Override
